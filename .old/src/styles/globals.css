@@ -1,0 +1,75 @@
+.dashboard-container {
+    padding-top: 10px;
+    background-color: #0D0E24;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #0D0E24;
+}
+.bar-chart-square {
+    margin: 10px;
+    padding-top: 10px;
+    background-color: red;
+    width: inherit;
+    flex: 1;
+    align-items: center;
+    align-content: center;
+    border-radius: 3%;
+    background-color: #191A2F;
+}
+
+.horizontal-container {
+    display: flex;
+    margin: 5px;
+    align-items: stretch;
+}
+
+.doughnut-square {
+    margin: 10px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    flex: 1;
+    border-radius: 3%;
+    background-color: #191A2F;
+}
+
+.square-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.doughnut {
+    height: 188px;
+}
+
+.answer-mean-doughnut {
+    height: 160px;
+}
+
+.title {
+    color: #EFEFEF;
+    font-family: arial;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20;
+}
+
+.subtitle {
+    color: #EFEFEF;
+    font-family: arial;
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.description {
+    color: #EFEFEF;
+    font-weight: 700;
+    font-family: arial;
+    padding-left: 10px;
+    font-size: 12px;
+    text-align: center;
+}

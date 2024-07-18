@@ -1,4 +1,9 @@
 "use client";
 export default function Login() {
-  return (<>Login</>);
+  return (
+    <>
+      <title>Delfus - Login</title>
+      Login
+    </>
+  );
 }

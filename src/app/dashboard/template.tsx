@@ -2,6 +2,7 @@
 export default function Template({ children }: { children: React.ReactNode }) {
     return (
         <>
+            <title>Delfus - Dashboard</title>
             <main>
                 {children}
             </main>
