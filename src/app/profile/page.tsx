@@ -33,7 +33,7 @@ export default function Profile() {
       <title>Delfus - Selecionar Perfil</title>
       <Content>
         <Container className="container d-flex flex-column justify-content-center align-items-center">
-          <Link href="/"><Logo className='d-block img-fluid' src={logo?.src} /></Link>
+          <Link href="/"><Logo loading="lazy" className='d-block img-fluid' src={logo?.src} /></Link>
           <Intro className='d-flex flex-column text-center justify-content-center align-items-center'>
             <Title>Bem-vindo ao Delfos</Title>
             <Text>O centro de monitoramento de clientes da Equatorial. 
@@ -43,7 +43,7 @@ export default function Profile() {
             <Nav className='d-flex align-items-stretch flex-xxl-wrap flex-xxl-row'>
               {data.map((row: any, index: any) => (
                 <NavItem key={index}>
-                  <Link className='d-flex flex-column text-center justify-items-center align-items-center' href={`dashboard/${row?.slug}`}>
+                  <Link className='d-flex flex-column text-center justify-items-center align-items-center' href={`/dashboard/${row?.slug}`}>
                     <Subtitle>Visão</Subtitle>
                     <Label>{row?.label}</Label>
                   </Link>

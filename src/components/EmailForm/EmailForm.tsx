@@ -56,7 +56,7 @@ export default function EmailForm(props: any) {
   return (
     <>
       <Form className='d-flex flex-column justify-content-center align-items-center' onSubmit={handleSubmit(onSubmit)}>
-        {logo && <Link href="/"><Logo className='d-block img-fluid' src={logo?.src} /></Link>}
+        {logo && <Link href="/"><Logo loading="lazy" className='d-block img-fluid' src={logo?.src} /></Link>}
         {props?.title && <Title>{props?.title}</Title>}
         <Fieldset className='d-flex flex-column'>
           <>
