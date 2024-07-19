@@ -36,9 +36,9 @@ export default function Template({ children }: { children: React.ReactNode }) {
     return (
         <>
             <title>Delfos - Dashboard</title>
-            <Wrap className='overflow-hidden d-flex flex-column justify-content-start align-items-start'>
+            <Wrap className='overflow-hidden vh-100 d-flex flex-column justify-content-start align-items-start'>
                 <Header />
-                <Content id='primary' className='d-flex flex-column justify-content-center align-items-center'>
+                <Content id='primary' className='d-flex overflow-auto flex-fill flex-column justify-content-start align-items-start'>
                     {children}
                 </Content>
             </Wrap>     

@@ -1,3 +1,4 @@
+import SpinnerProvider from "@/components/Spinner/context";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
 // Axios Interceptor Instance

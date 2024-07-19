@@ -3,6 +3,7 @@ import styled, {css, createGlobalStyle} from "styled-components";
 export const Container = styled.div`
     padding-top: 24px;
     padding-bottom: 24px;
+    gap: 24px 0;
 `;
 
 export const Content = styled.div`
@@ -26,4 +27,8 @@ export const Title = styled.h2`
   @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenMdMin}) {
     font-size: 2rem;
   }
+`;
+
+export const Grid = styled.div`
+  margin: -8px;
 `;
