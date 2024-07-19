@@ -52,10 +52,6 @@ export default function EmailForm(props: any) {
     }
   };
 
-  useEffect(() => {
-    console.log(props)
-  }, [props]);       
-
   return (
     <>
       <Form className='d-flex flex-column justify-content-center align-items-center' onSubmit={handleSubmit(onSubmit)}>
