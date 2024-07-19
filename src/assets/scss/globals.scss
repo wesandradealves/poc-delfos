@@ -20,6 +20,7 @@ html, body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;  
   animation: opacity 250ms forwards;
+  min-width: 360px;
 }
 
 .flex-fill {

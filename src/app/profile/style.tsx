@@ -6,13 +6,12 @@ export const Nav = styled.nav`
         gap: 0 82px;
     }
     width: calc(100% + calc(35px*4));
-    padding: 0 35px;
+    padding: 0 70px;
     overflow: auto;
     @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenXlMin}) {
-        margin: -35px 0;
-        overflow: hidden;
-        padding: 35px 0;
         width: auto;
+        padding: 0;
+        overflow: initial;
     }
 `;
 

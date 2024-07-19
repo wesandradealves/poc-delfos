@@ -22,7 +22,7 @@ export const Wrap = styled.div<PageTypo>`
     }
     position: relative;
     height: 100vh;
-    padding: 35px;
+    width: 100%;
 `;
 
 export const Content = styled.div`
