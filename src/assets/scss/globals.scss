@@ -4,6 +4,11 @@
 @import './palettes.scss';
 @import './reset.scss';
 
+html, body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;  
+}
+
 .flex-fill {
   flex: 1 !important
 } 

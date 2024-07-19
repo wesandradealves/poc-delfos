@@ -1,9 +1,10 @@
 "use client";
-export default function Login() {
-  return (
-    <>
+
+import LoginForm from "@/components/LoginForm/LoginForm";
+
+export default function Login(props: any) {
+  return <>
       <title>Delfus - Login</title>
-      Login
-    </>
-  );
+      <LoginForm />
+  </>;
 }
