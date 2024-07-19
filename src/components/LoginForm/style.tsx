@@ -21,19 +21,12 @@ export const Form = styled.form`
             text-decoration: none;
         }
     }
-    @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenSmMin}) {
-        gap: 24px 0;
-        @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenMdMin}) {
-            padding: 125px 112px;
-            // @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenWideMin}) {
-            //     padding: 60px;
-            //     gap: 46px 0;
-            //     @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenWideMin}) {
-            //         padding: 125px 112px;
-            //     }        
-            // }      
-        }        
-    }
+    @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenMdMin}) {
+        padding: 125px 112px;
+        @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenWideMin}) {
+            gap: 46px 0;
+        }            
+    }  
 `;
 
 export const Logo = styled.img`
@@ -59,7 +52,6 @@ export const Fieldset = styled.div`
     gap: 24px 0;
     @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenWideMin}) {
         gap: 46px 0;
-        margin-top: -22px;
     }
     width: 100%;
 `;

@@ -22,23 +22,11 @@ export const Form = styled.form`
         }
     }
     @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenSmMin}) {
-        gap: 46px 0;
+        @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenWideMin}) {
+            gap: 46px 0;
+        }
         padding: 125px 112px;;
-        // @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenLgMin}) {
-        //     padding: 90px 60px;
-        //     @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenWideMin}) {
-        //         padding: 60px;
-        //         gap: 46px 0;
-        //         @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenWideMin}) {
-        //             padding: 125px 112px;
-        //         }        
-        //     }      
-        // }        
     }
-`;
-
-export const Logo = styled.img`
-    max-width: 100%;
 `;
 
 export const FieldGroup = styled.div`
@@ -61,6 +49,7 @@ export const Title = styled.h2`
   font-optical-sizing: auto;
   color: white;
   margin: 0;
+  font-weight: 700;
   text-align: center;
   @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenMdMin}) {
     font-size: 2rem;
@@ -71,7 +60,6 @@ export const Fieldset = styled.div`
     gap: 24px 0;
     @media screen and (min-width: ${props => props?.theme?.breakpoints?.screenWideMin}) {
         gap: 46px 0;
-        margin-top: -22px;
     }
     width: 100%;
 `;
