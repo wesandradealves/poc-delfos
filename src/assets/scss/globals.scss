@@ -4,11 +4,28 @@
 @import './palettes.scss';
 @import './reset.scss';
 
+@keyframes opacity {
+  from {
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  to {
+      opacity: 1;
+      visibility: visible;
+  } 
+}
+
 html, body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;  
+  animation: opacity 250ms forwards;
 }
 
 .flex-fill {
   flex: 1 !important
 } 
+
+a {
+  text-decoration: initial !important;
+}

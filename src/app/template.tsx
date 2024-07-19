@@ -3,10 +3,12 @@ import bg from '@/assets/img/bg.jpg';
 import { Wrap, Content } from './style';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 export default function Template({ children }: { children: React.ReactNode }) {
 
     const router = useRouter();
+    const pathname = usePathname();
 
     const getCookie = (cname: any) => {
         let name = cname + "=";
@@ -25,8 +27,12 @@ export default function Template({ children }: { children: React.ReactNode }) {
     }
 
     useEffect(() => {
-        if(getCookie("user")) router.push('/dashboard'); 
-    }, [router]);       
+        if(getCookie("user") && (pathname == "/" || pathname.indexOf("password") > 0)) {
+            router.push('/profile'); 
+        } else if(!getCookie("user") && (pathname.indexOf("profile") > 0 || pathname.indexOf("dashboard") > 0)) {
+            router.push('/'); 
+        }
+    }, [router, pathname]);       
 
     return (
         <Wrap className='overflow-hidden d-flex flex-column justify-content-center align-items-center' background_image={bg?.src}>

@@ -6,7 +6,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { useRouter } from 'next/navigation';
 import { Inputs } from './types';
 import logo from '@/assets/img/logo.svg';
-import { Form, Logo, FieldGroup, Label, Input, Error, Fieldset, Title } from './style';
+import { Logo } from '../LoginForm/style';
+import { Form, FieldGroup, Label, Input, Error, Fieldset, Title } from './style';
 import { Button } from '@/assets/tsx/objects';
 import Link from 'next/link';
 

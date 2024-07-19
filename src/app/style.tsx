@@ -25,8 +25,11 @@ export const Wrap = styled.div<PageTypo>`
     padding: 35px;
 `;
 
-export const Content = styled.section`
+export const Content = styled.div`
     position: relative;
     z-index: 2;
     width: 100%;
+`;
+
+export const Container = styled.div`
 `;

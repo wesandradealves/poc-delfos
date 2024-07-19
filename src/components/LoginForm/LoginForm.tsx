@@ -57,7 +57,7 @@ export default function LoginForm(props: any) {
           });
         } else if (username && username?.password == credentials?.password) {
           setCookie(hash(username)),
-          router.push('/dashboard'); 
+          router.push('/profile'); 
         }
       }
     } catch (error) {

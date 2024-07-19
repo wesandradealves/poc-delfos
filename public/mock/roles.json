@@ -1,0 +1,19 @@
+[
+    {
+        "id": 0,
+        "label": "Admin",
+        "slug": "admin"
+    },    {
+        "id": 1,
+        "label": "Diretor",
+        "slug": "director"
+    },    {
+        "id": 2,
+        "label": "Gerência",
+        "slug": "manager"
+    },    {
+        "id": 3,
+        "label": "Analista",
+        "slug": "analyst"
+    }
+]
