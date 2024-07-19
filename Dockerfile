@@ -1,5 +1,5 @@
 # Usa uma imagem base do Node.js
-FROM node:14-alpine
+FROM node:20-alpine
 
 # Define o diretório de trabalho dentro do contêiner
 WORKDIR /frontend
@@ -8,7 +8,7 @@ WORKDIR /frontend
 COPY package*.json ./
 
 # Instala as dependências do projeto
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Copia todo o código fonte para o diretório de trabalho
 COPY . .
@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 3000
 
 # Define o comando para executar o aplicativo quando o contêiner for iniciado
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]

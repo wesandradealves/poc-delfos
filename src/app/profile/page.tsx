@@ -30,7 +30,7 @@ export default function Profile() {
   
   return (
     <>
-      <title>Delfus - Selecionar Perfil</title>
+      <title>Delfos - Selecionar Perfil</title>
       <Content>
         <Container className="container d-flex flex-column justify-content-center align-items-center">
           <Link href="/"><Logo loading="lazy" className='d-block img-fluid' src={logo?.src} /></Link>

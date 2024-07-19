@@ -18,6 +18,7 @@ export default function Header(props: any) {
   const router = useRouter();
   const deleteCookie = (cname: any) => {
     document.cookie = `${cname}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+    document.cookie=cname + ";max-age=0"; 
   }
 
   const getCookie = (cname: any) => {
