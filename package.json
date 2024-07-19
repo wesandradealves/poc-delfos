@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev-home-windows": "powershell -Command \"& { $envVar = Get-Content .env.local | Select-String -Pattern 'NEXT_PUBLIC_HOST' | ForEach-Object { $_ -replace '.*=', '' }; next dev -p 3000 -H $envVar }\"",
     "dev-home": "next dev -p 3000 -H $(grep NEXT_PUBLIC_HOST .env.local | cut -d '=' -f2)",
     "dev": "next dev",
     "build": "next build",
@@ -27,6 +28,7 @@
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",
+    "echarts": "^5.5.1",
     "echarts-for-react": "^3.0.2",
     "hamburgers": "^1.2.1",
     "mdi-react": "^9.4.0",

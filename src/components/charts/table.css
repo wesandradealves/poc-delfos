@@ -1,0 +1,45 @@
+table, thead {
+    width: 95%;
+    font-family: arial;
+    color: #EFEFEF;
+    font-size: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+td {
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 700;
+    height: 24px;
+}
+
+.td-name {
+    text-align: start;
+    font-weight: 700;
+}
+
+tr:nth-child(even) {
+    background-color: #26273b;
+}
+
+th {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.red {
+    padding: 4px;
+    background-color: #56F000;
+    border-radius: 2px;
+    color: #191A2F;
+}
+
+.green {
+    padding: 4px;
+    margin-left: 8px;
+    background-color: #F83731;
+    border-radius: 2px;
+    color: #EFEFEF
+}
